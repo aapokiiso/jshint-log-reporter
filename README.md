@@ -5,6 +5,17 @@ This JSHint reporter is intended for logging errors into logfiles instead of com
 Here's an example output: 
 
 ```
+/* --------------------------------------------- */
+/*    ~ Errors and warnings found by JSHint ~    */
+/* --------------------------------------------- */
+
+public\js\configure.js
+
+	[W098] line 40, column 12:
+		Error: 'require' is defined but never used.
+		Code block: "var require = {"
+
+
 public\js\utilities\color.js
 
 	[W033] line 96, column 3:
@@ -14,6 +25,7 @@ public\js\utilities\color.js
 	[W098] line 7, column 10:
 		Error: '$' is defined but never used.
 		Code block: "	var $ = require('jquery');"
+
 ```
 
 ### Installation
@@ -39,7 +51,7 @@ grunt.initConfig({
 	jshint: {
 		options: {
 			reporter: require('jshint-log-reporter'),
-			reporterOutput: 'jshint.log'
+			reporterOutput: 'path-to-jshint-output-file.log'
 		},
 		files: {
 			src: ["public/js/**/*.js"]
@@ -48,7 +60,7 @@ grunt.initConfig({
 }
 ```
 
-This task executes JSHint on the given files (files matching `["public/js/**/*.js"]`) and runs them through `jshint-log-reporter`, which returns the formatted error messages. These error messages will then be written inside `jshint.log`.
+This task executes JSHint on the given files (files matching `["public/js/**/*.js"]`) and runs them through `jshint-log-reporter`, which returns the formatted error messages. These error messages will then be written inside `path-to-jshint-output-file.log`.
 
 ### Testing
 
