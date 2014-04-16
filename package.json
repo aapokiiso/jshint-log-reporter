@@ -2,7 +2,11 @@
   "name": "jshint-log-reporter",
   "version": "1.0.0",
   "description": "JSHint reporter which saves formatted errors into a log file.",
-  "keywords": ["jshint", "reporter", "logger"],
+  "keywords": [
+    "jshint",
+    "reporter",
+    "logger"
+  ],
   "homepage": "https://github.com/aapokiiso/jshint-log-reporter",
   "repository": {
     "type": "git",
@@ -13,5 +17,8 @@
     "email": "aapo@kii.so",
     "url": "http://aapo.kii.so"
   },
-  "main": "index.js"
+  "main": "index.js",
+  "devDependencies": {
+    "nodeunit": "^0.8.6"
+  }
 }
