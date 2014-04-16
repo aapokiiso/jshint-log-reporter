@@ -1,11 +1,12 @@
 {
   "name": "jshint-log-reporter",
-  "version": "1.0.7",
-  "description": "JSHint reporter which saves formatted errors into a log file.",
+  "version": "1.0.8",
+  "description": "JSHint reporter intended for logging errors into a logfile instead of command line output.",
   "keywords": [
     "jshint",
     "reporter",
-    "logger"
+    "logger",
+    "logfile"
   ],
   "homepage": "https://github.com/aapokiiso/jshint-log-reporter",
   "repository": {
