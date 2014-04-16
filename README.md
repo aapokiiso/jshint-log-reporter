@@ -3,21 +3,21 @@ jshint-log-reporter
 
 JSHint reporter which saves formatted errors into a log file. 
 
-## Install
+## Installation
 
-To use this reporter, you have to have JSHint installed.
+To use `jshint-log-reporter`, you have to have JSHint installed on your system.
 
 ```bash
 $ npm install jshint -g
 ```
 
-Install the reporter with the following command.
+Now you can install the reporter with the following command:
 
 ```bash
 $ npm install jshint-log-reporter --save-dev
 ```
 
-## Use
+## Usage
 
 Here's a simple example implementation with [Grunt](http://gruntjs.com).
 
@@ -35,12 +35,12 @@ jshint: {
 
 This task executes JSHint on the given files (files matching `["public/js/**/*.js"]`) and runs them through `jshint-log-reporter`, which returns the formatted error messages. These error messages will then be written inside `jshint.log`.
 
-## Test
+## Testing
 
-To run the tests you have to have [Nodeunit](https://github.com/caolan/nodeunit) installed (globally). 
+To run the tests you have to have [Nodeunit](https://github.com/caolan/nodeunit) installed on your system. 
 
 ```bash
 $ npm install nodeunit -g
 ```
 
-Now simply execute `nodeunit test/index.js` on the command line to run the tests.
+Execute `nodeunit test/index.js` on the command line to run the tests.
