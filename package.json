@@ -1,6 +1,6 @@
 {
   "name": "jshint-log-reporter",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "JSHint reporter intended for logging errors into a logfile instead of command line output.",
   "keywords": [
     "jshint",

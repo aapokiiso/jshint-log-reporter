@@ -2,11 +2,13 @@
 
 This JSHint reporter is intended for logging errors into logfiles instead of
 command line output. It's especially useful when linting big projects for
-the first time, as you might tens or even hundreds of warnings and notices.
+the first time, as you might get tens or even hundreds of warnings and notices.
 
 Here's an example output:
 
 ```
+JSHint found a total of 3 errors in 2 files.
+
 public\js\configure.js
 
 	[W098] line 40, column 12:
