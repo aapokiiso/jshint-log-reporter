@@ -1,14 +1,12 @@
 ##jshint-log-reporter
 
-This JSHint reporter is intended for logging errors into logfiles instead of command line output.
+This JSHint reporter is intended for logging errors into logfiles instead of
+command line output. It's especially useful when linting big projects for
+the first time, as you might tens or even hundreds of warnings and notices.
 
-Here's an example output: 
+Here's an example output:
 
 ```
-/* --------------------------------------------- */
-/*    ~ Errors and warnings found by JSHint ~    */
-/* --------------------------------------------- */
-
 public\js\configure.js
 
 	[W098] line 40, column 12:
@@ -25,7 +23,6 @@ public\js\utilities\color.js
 	[W098] line 7, column 10:
 		Error: '$' is defined but never used.
 		Code block: "	var $ = require('jquery');"
-
 ```
 
 ### Installation
@@ -51,7 +48,7 @@ grunt.initConfig({
 	jshint: {
 		options: {
 			reporter: require('jshint-log-reporter'),
-			reporterOutput: 'path-to-jshint-output-file.log'
+			reporterOutput: 'path_to_an_output_file.log'
 		},
 		files: {
 			src: ["public/js/**/*.js"]
@@ -60,11 +57,16 @@ grunt.initConfig({
 }
 ```
 
-This task executes JSHint on the given files (files matching `["public/js/**/*.js"]`) and runs them through `jshint-log-reporter`, which returns the formatted error messages. These error messages will then be written inside `path-to-jshint-output-file.log`.
+This task executes JSHint on the given files
+(files matching `["public/js/**/*.js"]`) and runs them through
+`jshint-log-reporter`, which returns the formatted error messages.
+These error messages will then be written inside
+`path_to_an_output_file.log`.
 
 ### Testing
 
-To run the tests you have to have [Nodeunit](https://github.com/caolan/nodeunit) installed on your system. 
+To run the tests you have to have [Nodeunit](https://github.com/caolan/nodeunit)
+installed on your system.
 
 ```bash
 $ npm install nodeunit -g
